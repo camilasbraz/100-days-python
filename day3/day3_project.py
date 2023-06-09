@@ -28,14 +28,24 @@ c1 = input("You are watching TV and the phone rings. What do you do?\n1 Ignore i
 
 if c1 == "1":
     print("You scapped so far, but you ignored Ghostface and made him angry. Watch out")
+
     c2 = input("The doorbell rings. What do you do?\n1 Ignore it\n2 Answer it\n")
     if c2 == "1":
-        print("")
-        c2 = input("\n")
-
+        print("Ghostface lost its patience and exploded your house!\n")
     if c2 == "2":
         print("You opened the door and went outside, but no one was there!")
         c3 = input("Someone calls you again. What do you do?\n1 Ignore it\n2 Answer it\n")
+        if c3 == "1":
+            print("Ghostface lost its patience and exploded your house\n!")
+            print("You are dead now!\n")
+        if c3 == "2":
+            c4 = input("What is the name of the original killer from Friday the 13th?\n 1. Jason\n 2. Fred\n 3. Maureen\n")
+            print("Ghostface entered your house when you opened the door and was just distracting you.\n")
+            print("He pulls a knife and kills you!\n")
 
 if c1 == "2":
-    c2 = input("What is your favorite scary movie?\n1. Scream\n 2. ")
+    c5 = input("What is your favorite scary movie?\n1. Dont answer\n 2. Answer")
+    if c5 == "1":
+        print("Ghostface got angry because you didnt answer him, he pulls a knife and kills you!")
+    if c5 == "2":
+        print("Wrong answer. Ghostface pulls a knife and kills you!")
